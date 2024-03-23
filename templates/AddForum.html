@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+{% block content %}
+<div class="container mt-4">
+  <h1 class="mt-4 mb-3">Add a blog</h1>
+  <form action="{{ url_for('AddForum') }}" method="POST">
+    <div class="mb-3">
+      <label for="questionTitle" class="form-label">Title</label>
+      <input type="text" class="form-control" id="questionTitle" name="title" required>
+    </div>
+    <div class="mb-3">
+      <label for="questionDescription" class="form-label">Description</label>
+      <textarea class="form-control" id="questionDescription" rows="5" name="description" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+{% endblock %}

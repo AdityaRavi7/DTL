@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<section class="quiz-section">
+    <h2>Quiz</h2>
+    <form method="POST" action="{{ url_for('submit_quiz') }}" class="quiz-form">
+        <ul class="quiz-list">
+            {% for question in quiz_questions %}
+                <li class="quiz-question">
+                    <div class="question-text">{{ question.question_text }}</div>
+                    <ul class="options-list">
+                        {% for option in question.options %}
+                            <li class="option">
+                                <input type="radio" id="{{ option.option_id }}" name="{{ question._id }}" value="{{ option.option_text }}">
+                                <label for="{{ option.option_id }}">{{ option.option_text }}</label>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </li>
+            {% endfor %}
+        </ul>
+        <button type="submit" class="submit-button">Submit Answers</button>
+    </form>
+</section>
+{% endblock %}

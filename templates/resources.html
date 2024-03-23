@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="tabs">
+        <!-- Easy/Basic -->
+        <input type="radio" class="tabs__radio" name="Resource" id="Easy">
+        <label for="Easy" class="tabs__label">Beginner</label>
+        <div class="tabs__content">
+            <div class="container beginner-container">
+                <p class="resource-link"><strong>Playlist for entire basics of pointers: </strong><a href="https://www.youtube.com/playlist?list=PL2_aWCzGMAwLZp6LMUKI3cc7pgGsasm2_">myCodeSchool</a></p>
+                <p class="resource-link"><strong>Pointers in C / C++ [Full Course]: </strong><a href="https://www.youtube.com/watch?v=zuegQmMdy8M">FreeCodeCamp</a></p>
+                <p class="resource-link"><strong>Stack Overflow Questions on Pointers: </strong><a href="https://stackoverflow.com/questions/tagged/pointers">Stack Overflow Pointers Questions</a></p>
+                <p class="resource-link"><strong>Stack Overflow Tags for Pointers: </strong><a href="https://stackoverflow.com/tags">Stack Overflow Tags</a></p>
+                <p class="resource-link"><strong>Blog for beginners </strong><a href="https://lockpin010.medium.com/pointers-in-depth-592a0b85acbc">Begin Pointer Learning</a></p>
+            </div>
+        </div>
+
+        <!-- Intermediate/Medium -->
+        <input type="radio" class="tabs__radio" name="Resource" id="Intermediate">
+        <label for="Intermediate" class="tabs__label">Intermediate</label>
+        <div class="tabs__content">
+            <div class="container intermediate-container">
+                <p class="resource-link"><strong>Blog for Intermediate </strong><a href="https://unstop.com/blog/pointers-in-cpp">Pointers in C++</a></p>
+                <p class="resource-link"><strong>Guide to learn pointers: </strong><a href="https://www.udacity.com/blog/2021/05/our-guide-to-cpp-pointers.html">Our Guide to CPP Pointers</a></p>
+                <p class="resource-link"><strong>Application of Pointers in Code: </strong><a href="https://www.prepbytes.com/blog/pointers/">PrepBytes - Pointers</a></p>
+            </div>
+        </div>
+
+        <!-- Expert/Difficult -->
+        <input type="radio" class="tabs__radio" name="Resource" id="Expert">
+        <label for="Expert" class="tabs__label">Expert</label>
+        <div class="tabs__content">
+            <div class="container expert-container">
+                <p class="resource-link"><strong>Blog for pointers in depth: </strong><a href="https://slashvar.github.io/2018/07/23/pointers.html">Understanding Pointers</a></p>
+                <p class="resource-link"><strong>Understanding memory pointers: </strong><a href="https://tigerabrodi.blog/memory-pointers-and-c-under-the-hood-full-guide">Memory Pointers and C</a></p>
+                <p class="resource-link"><strong>Mistakes on Pointers: </strong><a href="https://acodersjourney.com/top-20-c-pointer-mistakes/">Top 20 C Pointer Mistakes</a></p>
+            </div>
+        </div>
+    </div>
+{% endblock %}

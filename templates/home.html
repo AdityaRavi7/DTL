@@ -1,0 +1,84 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="container-fluid d-flex align-items-center justify-content-center text-center" style="height: 70vh;">
+  <div class="text-left">
+    <img src="{{ url_for('static', filename='images/home1.jpg') }}" alt="Pointer Image" style="width: 400px; height: auto; float: right; margin-right: 40px;">
+    <div id="left-wrap">
+      <section>
+        <span class="text-left">
+          <h1>Pointing the way towards Pointers</h1>
+        </span>
+        <p>
+          Welcome to PointerPro, your ultimate destination for mastering the intricate world of pointers in programming.
+          Pointers are a fundamental concept in languages like C and C++, allowing developers to manipulate memory directly and create efficient, powerful code.
+        </p>
+      </section>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="container-fluid d-flex align-items-center justify-content-center text-center" style="height: 40vh; margin-top: 0px;">
+  <div class="p2">
+    <section>
+      <h3>What are Pointers?</h3>
+      <p>
+        In programming, a pointer is a variable that stores the memory address of another variable.
+        It provides a way to access and manipulate data indirectly, offering a level of control and efficiency crucial for tasks like dynamic memory allocation and data manipulation.
+      </p>
+      
+      <br>
+      <br>
+      <h3>Start Your Pointer Journey Today!</h3>
+      <p>
+        Whether you're a beginner venturing into the programming world or an experienced developer looking to master pointers, PointerPro is your go-to resource.
+        Embark on your journey to becoming a proficient pointer programmer today!
+      </p>
+
+    </section>
+  </div>
+</div>
+
+
+
+<div class="container-fluid d-flex align-items-center justify-content-center text-center" style="height: 70vh;">
+  <div class="text-left">
+    <img src="{{ url_for('static', filename='images/home2.jpg') }}" alt="Pointer Image" style="width: 400px; height: auto; float: left; margin-left: 40px; margin-top: 20px;">
+    <div id="right-wrap">
+      <section>
+        <span class="text-right">
+          <h3>Why Learn Pointers?</h3>
+        </span>
+        <p>
+          <ul>
+            <li><strong>Efficient Memory Management:</strong> Pointers enable precise control over memory, allowing dynamic allocation and deallocation of memory.</li>
+            <li><strong>Manipulating Complex Data Structures:</strong> Pointers are essential when working with complex data structures like linked lists, trees, and graphs.</li>
+            <li><strong>Interacting with Hardware:</strong> Systems programming and device interactions often require the use of pointers to access and manipulate hardware resources directly.</li>
+          </ul>
+        </p>
+      </section>
+    </div>
+  </div>
+</div>
+
+
+<script>
+!function(w, d, s, ...args){
+  var div = d.createElement('div');
+  div.id = 'aichatbot';
+  d.body.appendChild(div);
+  w.chatbotConfig = args;
+
+  var f = d.getElementsByTagName(s)[0],
+  j = d.createElement(s);
+  j.defer = true;
+  j.type = 'module';
+  j.src = 'https://aichatbot.sendbird.com/index.js';
+  f.parentNode.insertBefore(j, f);
+}(window, document, 'script', '45E4A092-162A-4E64-8A01-C44E430C8074', 'onboarding_bot');
+</script>
+
+{% endblock content %}
