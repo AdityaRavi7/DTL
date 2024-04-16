@@ -1,5 +1,5 @@
 body{
-    background-color: #1A2238 ;
+    background-color: #33373E ;
 }
 h1,h2,h3,p,ul{
     color: white;
@@ -33,16 +33,7 @@ h1,h2,h3,p,ul{
     font-size: large;
 }
 
-/* 
-.content {
-    display: flex;
-    align-items: center;
-} */
 
-
-/* CSS for resource.html */
-
-/* Tabs styling */
 .tabs {
     margin-left: auto;
     margin-right: auto;
@@ -112,7 +103,15 @@ h1,h2,h3,p,ul{
     color: #333;
 }
 
+.nav-logo{
+    height: 70px;
+    margin-right: 7px;
+    margin-left: 10px;
+}
 
+.navbar-brand-ms-3{
+    height: 60px;
+}
 
 
 
